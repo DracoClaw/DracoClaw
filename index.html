@@ -8,12 +8,6 @@
     width: 100%;
     height: 100%;
   }
-  .background {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: #1E1E1E;
-  }
   .title {
     width: 501px;
     height: 102px;
@@ -30,7 +24,7 @@
   }
   .tag {
     left: 50%;
-    top: 60%; /* Adjusted the top position to move the tag higher */
+    top: 100%; /* Adjusted the top position to move the tag higher */
     position: absolute;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -40,14 +34,6 @@
     font-weight: 400;
     word-wrap: break-word;
     white-space: nowrap; /* Keeps the tag on one line */
-  }
-  .buttons {
-    left: 50%;
-    top: 125%; /* Adjusted the top position to place the buttons under the tag */
-    position: absolute;
-    transform: translateX(-50%);
-    display: flex; /* Display the buttons in a row */
-    gap: 10px; /* Add a gap between the buttons */
   }
   .button {
     width: 110px;
@@ -62,24 +48,25 @@
     font-family: 'Coda Caption', sans-serif;
     font-weight: 800;
     cursor: pointer;
+    text-decoration: none;
   }
 </style>
 </head>
 <body>
-  <div class="background">
-    <div class="Group1" style="height: 150px; left: 50%; top: 50%; transform: translate(-50%, -50%); position: absolute;">
+  <div style="width: 100%; height: 100%; position: relative; background: #1E1E1E">
+    <div style="height: 150px; left: 50%; top: 50%; transform: translate(-50%, -50%); position: absolute;">
       <div class="title">DracoClaw</div>
-      <div class="tag" style="left: 0; top: 100%; transform: translate(-50%, -50%); position: absolute;">Be Gay, Do Crime</div>
-      <div class="buttons">
-        <div class="button" style="background: #FF7F7F;">GitHub</div>
-        <div class="button" style="background: #FFB27F;">Discord</div>
-        <div class="button" style="background: #FFED7F;">Email</div>
-        <div class="button" style="background: #7FFF8E;">PayPal</div>
-        <div class="button" style="background: #7FC9FF;">Spotify</div>
-        <div class="button" style="background: #D67FFF;">Tumblr</div>
+      <div class="tag">Be Gay, Do Crime</div>
+      <div style="left: 50%;top: 125%;position: absolute;transform: translateX(-50%);display: flex;gap: 10px;">
+        <a class="button" style="background: #FF7F7F;" href="https://github.com/DracoClaw/" target="_blank">GitHub</a>
+        <a class="button" style="background: #FFB27F;" href="https://discord.com/users/341680387979870219/" target="_blank">Discord</a>
+        <a class="button" style="background: #FFED7F;" href="https://mail@dracoclaw.com" target="_blank">Email</a>
+        <a class="button" style="background: #7FFF8E;" href="https://paypal.me/JacobMessing?country.x=IL&locale.x=en_US/" target="_blank">PayPal</a>
+        <a class="button" style="background: #7FC9FF;" href="https://open.spotify.com/user/draco_claw?si=9568d74686e14e5a/" target="_blank">Spotify</a>
+        <a class="button" style="background: #D67FFF;" href="https://jakeitorbreakit.tumblr.com/" target="_blank">Tumblr</a>
       </div>
     </div>
-    <div class="overlay" style="width: 428.68px; height: 427.77px; left: -36.02px; top: -37.78px; position: absolute">
+    <div style="width: 428.68px; height: 427.77px; left: -36.02px; top: -37.78px; position: absolute">
       <div class="RectanglePurple" style="width: 566.37px; height: 38.58px; left: 0.91px; top: 400.49px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; background: #D67FFF"></div>
       <div class="RectangleBlue" style="width: 511.79px; height: 36.64px; left: 0px; top: 365.98px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; background: #7FC9FF"></div>
       <div class="RectangleGreen" style="width: 461.06px; height: 37.28px; left: 0px; top: 329.65px; position: absolute; transform: rotate(-45deg); transform-origin: 0 0; background: #7FFF8E"></div>
